@@ -1,0 +1,544 @@
+/* * {
+    padding: 0px;
+    margin: 0px; 
+    box-sizing: border-box;   
+} */
+.header{
+    position: relative;
+}
+.slide{
+    position: relative;
+    background: url("../images/Background-Image.jpg") no-repeat;
+    height:750px;
+    background-size: 100% 100%;
+}
+.slide-content{
+   display: flex;
+   flex-direction: column;
+   margin-top: 120px;
+   
+}
+.text-large{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 160px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#b5a496;
+}
+.text-small{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 18px;
+    color:#b5a496;
+    text-align: center;
+}
+.menu-home{
+    z-index: 0;
+}
+.menu-home ul li {
+    padding-left: 30px;
+    display: inline-block;
+}
+.menu-home ul {
+    
+    margin-right: 290px;
+}
+.menu-home ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.menu-home ul li:hover a{
+    transition: 0.1s;
+    margin-top: 10px;
+    border-bottom: 2px solid white;
+    border-bottom-width:3px;  
+}
+
+.icon{
+    display: none;
+}
+.close-menu{
+    display: none;
+}
+.logo{
+    position: absolute;
+}
+.menu-home{
+
+}
+.text-content{
+    margin-top: 31px;
+}
+.slogan{
+    top: 0;
+    left: 0;
+}
+.text-about1{
+    font-family: Rage Italic;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 80px; color:#C88570
+}
+.text-about2{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 130px;
+}
+
+.box{
+    background: #F3F8FF;
+    margin-top: 20px;
+    padding-top:50px ;
+    height: 250px;
+    
+}
+.box p{
+ 
+   padding-top:30px ;
+    
+}
+.banner-demo{
+    background: url("../images/460125-PFK6CZ-434\ 1.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 100px;
+    height: auto;
+}
+.test{
+    opacity: 0.7;
+    background-color: #3A170C;
+}
+.parent{
+    position: relative;
+}
+.border-box{
+    top: 80px;
+    left: 38%;
+    position: absolute;
+    min-height: 118px;
+    min-width: 160px;
+    border: 5px solid rgba(200, 133, 112, 0.3);
+  
+
+}
+.number-demo{
+    content: '';
+    top: 5px;
+    position: absolute;
+    left: 35.5%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 143px;
+    color: #FFFFFF;
+    text-shadow: 0px 5px 25px rgba(0, 0, 0, 0.36)
+}
+.pre-made{
+    top: 61px;
+    position: absolute;
+    left: 49%;
+    font-family: "Rage Italic";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 70px;
+    color: #C88570;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.demo-concept{
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    top: 130px;
+    position: absolute;
+    left: 49%;
+    color: #FFFFFF;
+}
+.text-about3{
+    top: 250px;
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color:#FFFFFF;
+}
+.home{
+    margin: 300px 0px 0px 0px;
+    
+}
+.page-about{
+   
+}
+.multipuple-pages{
+    /* width: 200px; */
+    /* position: relative; */
+    margin-top: 100px;
+}
+.box-bord{
+    /* position: absolute; */
+    margin:auto;
+    height: 118px;
+    width: 160px;
+    border:5px solid rgba(200, 134, 112, 0.4);
+
+}
+.num-page{
+    /* position: relative; */
+    
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 143px;
+    line-height: 214px;
+    margin:-185px 0px 0px -60px;
+    text-align: center;
+}
+.text-page1{
+    font-family: Rage Italic;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 56px;
+    margin:-165px 0px 0px 730px;
+    color: #C88570;
+}
+.text-page2{
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    /* line-height: 42px; */
+    text-transform: uppercase;
+    margin:-30px 0px 0px 730px;
+    color: #222222;
+}
+.blog-category{
+    padding-top: 100px;
+}
+.professional-service{
+    background: url("../images/3062397\ 1.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 100px;
+    height: 560px;
+    
+}
+.circle{
+    width: 520px;
+    height: 520px;
+    background: linear-gradient(153.88deg, rgba(124, 184, 60, 0.8) 0%, rgba(60, 99, 18, 0.8) 100%);
+    border-radius: 100% 100%;
+    text-justify: center;
+    box-shadow: 0 0 0 20px #af9a9a70;    
+}
+.text-title{
+    padding-top: 80px;
+    font-family: "Rage Italic";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+.text-title2{
+    padding: 10px 0px;
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.text-content-service{
+    padding: 40px 45px;
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.btn-awesome button{
+    outline: none;
+    width: 225px;
+    height: 60px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    /* border:1px solid black; */
+}
+.text-review{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 80px;
+    font-size: 19px;
+    
+}
+.text-review2{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    padding: 0px 20px;
+}
+.text-review3{
+    font-family: Rage Italic;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 80px;
+    /* line-height: 101px; */
+    color: #C88570;
+}
+.personal{
+    background: #F3F8FF;
+}
+.img-customer{
+    width: 180px;
+    height: 180px;
+}
+.address-customer{
+    font-family: Roboto Mono;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #999999;
+}
+.banner-bottom{
+    background: url("../images/460146-PFK6ES-4\ 1.png") no-repeat;
+    height:400px;
+    background-size: 100% 100%;
+}
+.logo-bottom{
+    position: relative;
+}
+.logo-text{
+    position: relative;
+    font-family: "Yesteryear";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    /* identical to box height, or 100% */
+    text-transform: capitalize;
+    color: #222222;
+}
+.icon-logo{
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
+.text-bottom{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 54px;
+    text-align: center;
+    color: #C88570;
+}
+.footer{
+    background: #332A24;
+    padding: 40px 0px;
+    text-align: center;
+
+}
+
+.footer span{
+    letter-spacing: 2px;
+    color:white;
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+} 
+.footer p a{
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color:#C88570;
+}
+@media screen and (max-width: 992px) {
+    .menu-home{
+        /* margin-left: 20px; */
+        float: none;
+
+        width: 100%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .slide .icon{
+        display: block;
+        z-index: 99;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 30px;
+    }
+    .close-menu{
+        z-index: 99;
+        position: absolute;
+        display: block;
+       top: 5px;
+        left: 5px;
+        font-size: 30px;
+        color: white;
+    }
+    .responsive {
+        /* float: none; */
+        background: none;
+        width: 0%;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        transition: ease-in-out;
+    }
+    .responsive ul{
+        float: none;
+        width: 100%;
+        height: 300px;
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .slide .slide-content{
+        display: block;
+    }
+    .responsive ul li{
+        padding: 10px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .responsive ul li:hover a{
+        padding: 0px 25px;
+        border: 0px;
+        background: red;
+        width: 100%;
+    }
+    .logo img{
+        display: block;
+        width: 150px;
+        margin-left: 20px;
+       
+    }
+    .slide{
+        height: 300px;
+    }
+
+   
+}
+
+@media screen and (max-width: 600px ) {
+    .slide .icon{
+        display: block;
+        z-index: 99;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+       font-size: 30px;
+    }
+    .close-menu{
+        z-index: 99;
+        position: absolute;
+        display: block;
+       top: 5px;
+        left: 5px;
+        font-size: 30px;
+        color: white;
+    }
+    .responsive {
+        display: none;
+        /* float: none; */
+        background: none;
+        width: 0%;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        transition: ease-in-out;
+    }
+    .responsive ul{
+        float: none;
+        width: 100%;
+        height: 400px;
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .slide .slide-content{
+        display: block;
+    }
+    .text-large{
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        color:#b5a496;
+    }
+    .text-small{
+        font-family: Roboto Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 18px;
+        color:#b5a496;
+        text-align: center;
+    }
+    .responsive ul li{
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .responsive ul li:hover a{
+        padding: 10px 40px;
+        border: 0px;
+        background: red;
+        width: 100%;
+    }
+    .logo img{
+        display: block;
+        width: 150px;
+        margin-left: 20px;
+       
+    }
+    .slide{
+        height: 400px;
+    }
+
+   
+}
+@media screen and (max-width: 1200px){
+    /* .menu-home{
+        display: block;
+    } */
+    /* .responsive {
+        
+        display: block;
+    }
+     */
+}

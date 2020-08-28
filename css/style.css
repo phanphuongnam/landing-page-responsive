@@ -1,18 +1,50 @@
-/* * {
+* {
     padding: 0px;
-    margin: 0px; 
-    box-sizing: border-box;   
-} */
+    margin: 0px;
+    box-sizing: border-box;
+}
 
 .header {
     position: relative;
 }
 
-.slide {
+.menu-primary {
+    position: absolute;
+    z-index: 99;
+}
+
+.slick-slide {
+    box-shadow: none;
+    border-color: none;
+    color: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.slide1 {
     position: relative;
     background: url("../images/Background-Image.jpg") no-repeat;
     height: 750px;
     background-size: 100% 100%;
+}
+
+.slide2 {
+    position: relative;
+    background: url("../images/download.jpg") no-repeat;
+    height: 750px;
+    background-size: 100% 100%;
+}
+
+.slide3 {
+    position: relative;
+    background: url("../images/download1.jpg") no-repeat;
+    height: 750px;
+    background-size: 100% 100%;
+}
+
+.slide::after {
+    content: '';
 }
 
 .slide-content {
@@ -28,7 +60,7 @@
     font-size: 160px;
     text-align: center;
     text-transform: uppercase;
-    color: #b5a496;
+    color: #f3eae3f7;
 }
 
 .text-small {
@@ -37,12 +69,13 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 18px;
-    color: #b5a496;
+    color: #f3eae3f7;
     text-align: center;
 }
 
 .menu-home {
-    z-index: 0;
+    z-index: 99;
+    /* position: fixed; */
 }
 
 .menu-home ul li {
@@ -412,10 +445,14 @@
     color: #C88570;
 }
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .pre-made {
+        left: 50%;
+    }
+}
 
 @media screen and (max-width: 953px) {
-    .slide .icon {
+    .menu-primary .icon {
         display: block;
         z-index: 99;
         position: absolute;
@@ -448,7 +485,7 @@
     .responsive ul {
         float: none;
         width: 100%;
-        height: 400px;
+        /* height: 400px; */
         margin-right: 0px;
         margin-top: 0px !important;
         padding: 0px;
@@ -458,22 +495,10 @@
         display: block;
     }
     .text-large {
-        font-family: Yeseva One;
-        font-style: normal;
-        font-weight: normal;
         font-size: 60px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #b5a496;
     }
     .text-small {
-        font-family: Roboto Mono;
-        font-style: normal;
-        font-weight: normal;
         font-size: 24px;
-        line-height: 18px;
-        color: #b5a496;
-        text-align: center;
     }
     .responsive ul li {
         padding: 20px 0px;
@@ -492,7 +517,9 @@
         width: 150px;
         margin-left: 20px;
     }
-    .slide {
+    .slide1,
+    .slide2,
+    .slide3 {
         height: 400px;
     }
     .text-about1 {
@@ -510,7 +537,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .slide .icon {
+    .menu-primary .icon {
         display: block;
         z-index: 99;
         position: absolute;
@@ -543,7 +570,7 @@
     .responsive ul {
         float: none;
         width: 100%;
-        height: 400px;
+        height: auto;
         margin-right: 0px;
         margin-top: 0px !important;
         padding: 0px;
@@ -559,7 +586,6 @@
         font-size: 48px;
         text-align: center;
         text-transform: uppercase;
-        color: #b5a496;
     }
     .text-small {
         font-family: Roboto Mono;
@@ -567,7 +593,6 @@
         font-weight: normal;
         font-size: 17px;
         line-height: 18px;
-        color: #b5a496;
         text-align: center;
     }
     .responsive ul li {
@@ -587,8 +612,22 @@
         width: 150px;
         margin-left: 20px;
     }
-    .slide {
-        height: 400px;
+    .slide1,
+    .slide2,
+    .slide3 {
+        height: auto;
+    }
+    .slogan {
+        display: block;
+        text-align: center;
+    }
+    .text-about1 {
+        font-size: 45px;
+        padding: 0px;
+    }
+    .text-about2 {
+        font-size: 40px;
+        padding: 0px;
     }
     .demo-concept {
         font-size: 20px;
@@ -603,9 +642,6 @@
         font-family: "Rage Italic";
         font-size: 30px;
     }
-    .text-about1 {
-        /* font-size: ; */
-    }
     .border-box {
         min-height: 100px;
         min-width: 100px;
@@ -613,6 +649,486 @@
     .number-demo {
         font-size: 100px;
         top: 30px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .slide .icon {
+        display: block;
+        z-index: 99;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 30px;
+    }
+    .close-menu {
+        z-index: 99;
+        position: absolute;
+        display: block;
+        top: 5px;
+        left: 5px;
+        font-size: 30px;
+        color: white;
+    }
+    .responsive {
+        /* float: none; */
+        background: none;
+        width: 0%;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        transition: ease-in-out;
+    }
+    .responsive ul {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .slide .slide-content {
+        display: block;
+    }
+    .responsive ul li {
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .responsive ul li:hover a {
+        padding: 0px 25px;
+        border: 0px;
+        background: #8FBC8F;
+        width: 100%;
+    }
+    .logo img {
+        display: block;
+        width: 150px;
+        margin-left: 20px;
+    }
+    .slide1,
+    .slide2,
+    .slide3 {
+        height: auto;
+    }
+    .slogan {
+        display: block;
+        text-align: center;
+    }
+    .text-about1 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .text-about2 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .border-box {
+        min-height: 80px;
+        min-width: 90px;
+    }
+    .pre-made {
+        font-size: 25px;
+        left: 58%;
+    }
+    .demo-concept {
+        width: 40%;
+        font-size: 15px;
+        left: 58%;
+    }
+    .number-demo {
+        font-size: 80px;
+        top: 40px;
+    }
+    .text-about3 {
+        font-size: 12px;
+        top: 200px;
+    }
+    .demo {
+        margin-top: -60px;
+    }
+    .box-bord {
+        height: 80px;
+        width: 110px;
+    }
+    .num-page {
+        font-size: 90px;
+        line-height: 250px;
+    }
+    .text-page1 {
+        position: relative;
+        top: 10px;
+        margin-left: 238px;
+        font-size: 25px;
+    }
+    .text-page2 {
+        position: relative;
+        top: 15px;
+        margin-left: 238px;
+        font-size: 25px;
+    }
+    .professional-service {
+        height: 350px;
+    }
+    .circle {
+        width: 310px;
+        height: 310px;
+    }
+    .text-title {
+        font-size: 15px;
+        /* padding: 10px; */
+        line-height: 4px;
+    }
+    .text-title2 {
+        font-size: 15px;
+        line-height: 4px;
+    }
+    .text-content-service {
+        padding: 0px
+    }
+    .btn-awesome button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        color: #a7a7a7;
+    }
+    .text-review2 {
+        font-size: 40px;
+    }
+    .text-review3 {
+        font-size: 40px;
+    }
+    .text-bottom {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .banner-bottom {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .slide .icon {
+        display: block;
+        z-index: 99;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 30px;
+    }
+    .close-menu {
+        z-index: 99;
+        position: absolute;
+        display: block;
+        top: 5px;
+        left: 5px;
+        font-size: 30px;
+        color: white;
+    }
+    .responsive {
+        /* float: none; */
+        background: none;
+        width: 0%;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        transition: ease-in-out;
+    }
+    .responsive ul {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .slide .slide-content {
+        display: block;
+    }
+    .responsive ul li {
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .responsive ul li:hover a {
+        padding: 0px 25px;
+        border: 0px;
+        background: #8FBC8F;
+        width: 100%;
+    }
+    .logo img {
+        display: block;
+        width: 150px;
+        margin-left: 20px;
+    }
+    .slide1,
+    .slide2,
+    .slide3 {
+        height: auto;
+    }
+    .slogan {
+        display: block;
+        text-align: center;
+    }
+    .text-about1 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .text-about2 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .border-box {
+        min-height: 80px;
+        min-width: 90px;
+    }
+    .pre-made {
+        font-size: 25px;
+        left: 58%;
+    }
+    .demo-concept {
+        width: 40%;
+        font-size: 15px;
+        left: 58%;
+    }
+    .number-demo {
+        font-size: 80px;
+        top: 40px;
+    }
+    .text-about3 {
+        font-size: 12px;
+        top: 200px;
+    }
+    .demo {
+        margin-top: -60px;
+    }
+    .box-bord {
+        height: 80px;
+        width: 110px;
+    }
+    .num-page {
+        font-size: 90px;
+        line-height: 250px;
+    }
+    .text-page1 {
+        position: relative;
+        top: 10px;
+        margin-left: 238px;
+        font-size: 25px;
+    }
+    .text-page2 {
+        position: relative;
+        top: 15px;
+        margin-left: 238px;
+        font-size: 25px;
+    }
+    .professional-service {
+        height: 350px;
+    }
+    .circle {
+        width: 310px;
+        height: 310px;
+    }
+    .text-title {
+        font-size: 15px;
+        /* padding: 10px; */
+        line-height: 4px;
+    }
+    .text-title2 {
+        font-size: 15px;
+        line-height: 4px;
+    }
+    .text-content-service {
+        padding: 0px
+    }
+    .btn-awesome button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        color: #a7a7a7;
+    }
+    .text-review2 {
+        font-size: 40px;
+    }
+    .text-review3 {
+        font-size: 40px;
+    }
+    .text-bottom {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .banner-bottom {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .slide .icon {
+        display: block;
+        z-index: 99;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 30px;
+    }
+    .close-menu {
+        z-index: 99;
+        position: absolute;
+        display: block;
+        top: 5px;
+        left: 5px;
+        font-size: 30px;
+        color: white;
+    }
+    .responsive {
+        /* float: none; */
+        background: none;
+        width: 0%;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        transition: ease-in-out;
+    }
+    .responsive ul {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .slide .slide-content {
+        display: block;
+    }
+    .responsive ul li {
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .responsive ul li:hover a {
+        padding: 0px 25px;
+        border: 0px;
+        background: #8FBC8F;
+        width: 100%;
+    }
+    .logo img {
+        display: block;
+        width: 150px;
+        margin-left: 20px;
+    }
+    .slide1,
+    .slide2,
+    .slide3 {
+        height: auto;
+    }
+    .slogan {
+        display: block;
+        text-align: center;
+    }
+    .text-about1 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .text-about2 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .border-box {
+        min-height: 80px;
+        min-width: 90px;
+    }
+    .pre-made {
+        font-size: 25px;
+        left: 60%;
+    }
+    .demo-concept {
+        width: 40%;
+        font-size: 15px;
+        left: 60%;
+    }
+    .number-demo {
+        font-size: 80px;
+        top: 40px;
+    }
+    .text-about3 {
+        font-size: 12px;
+        top: 200px;
+    }
+    .demo {
+        margin-top: -60px;
+    }
+    .box-bord {
+        height: 80px;
+        width: 110px;
+    }
+    .num-page {
+        font-size: 90px;
+        line-height: 250px;
+    }
+    .text-page1 {
+        position: relative;
+        top: 10px;
+        margin-left: 215px;
+        font-size: 25px;
+    }
+    .text-page2 {
+        position: relative;
+        top: 15px;
+        margin-left: 215px;
+        font-size: 25px;
+    }
+    .professional-service {
+        height: 350px;
+    }
+    .circle {
+        width: 310px;
+        height: 310px;
+    }
+    .text-title {
+        font-size: 15px;
+        /* padding: 10px; */
+        line-height: 4px;
+    }
+    .text-title2 {
+        font-size: 15px;
+        line-height: 4px;
+    }
+    .text-content-service {
+        padding: 0px
+    }
+    .btn-awesome button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        color: #a7a7a7;
+    }
+    .text-review2 {
+        font-size: 40px;
+    }
+    .text-review3 {
+        font-size: 40px;
+    }
+    .text-bottom {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .banner-bottom {
+        height: auto;
     }
 }
 
@@ -649,7 +1165,7 @@
     .responsive ul {
         float: none;
         width: 100%;
-        height: 300px;
+        height: auto;
         margin-right: 0px;
         margin-top: 0px !important;
         padding: 0px;
@@ -659,7 +1175,7 @@
         display: block;
     }
     .responsive ul li {
-        padding: 10px 0px;
+        padding: 20px 0px;
         display: block;
         width: 100%;
         text-align: center;
@@ -675,12 +1191,298 @@
         width: 150px;
         margin-left: 20px;
     }
-    .slide {
-        height: 300px;
+    .slide1,
+    .slide2,
+    .slide3 {
+        height: auto;
+    }
+    .slogan {
+        display: block;
+        text-align: center;
+    }
+    .text-about1 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .text-about2 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .border-box {
+        min-height: 80px;
+        min-width: 90px;
+    }
+    .pre-made {
+        font-size: 25px;
+        left: 60%;
+    }
+    .demo-concept {
+        width: 40%;
+        font-size: 15px;
+        left: 60%;
+    }
+    .number-demo {
+        font-size: 80px;
+        top: 40px;
+    }
+    .text-about3 {
+        font-size: 12px;
+        top: 200px;
+    }
+    .demo {
+        margin-top: -60px;
+    }
+    .box-bord {
+        height: 80px;
+        width: 110px;
+    }
+    .num-page {
+        font-size: 90px;
+        line-height: 250px;
+    }
+    .text-page1 {
+        position: relative;
+        top: 10px;
+        margin-left: 215px;
+        font-size: 25px;
+    }
+    .text-page2 {
+        position: relative;
+        top: 15px;
+        margin-left: 215px;
+        font-size: 25px;
+    }
+    .professional-service {
+        height: 350px;
+    }
+    .circle {
+        width: 310px;
+        height: 310px;
+    }
+    .text-title {
+        font-size: 15px;
+        /* padding: 10px; */
+        line-height: 4px;
+    }
+    .text-title2 {
+        font-size: 15px;
+        line-height: 4px;
+    }
+    .text-content-service {
+        padding: 0px
+    }
+    .btn-awesome button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        color: #a7a7a7;
+    }
+    .text-review2 {
+        font-size: 40px;
+    }
+    .text-review3 {
+        font-size: 40px;
+    }
+    .text-bottom {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .banner-bottom {
+        height: auto;
     }
 }
 
-
+@media screen and (max-width: 320px) {
+    .slide .icon {
+        display: block;
+        z-index: 99;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 30px;
+    }
+    .close-menu {
+        z-index: 99;
+        position: absolute;
+        display: block;
+        top: 5px;
+        left: 5px;
+        font-size: 30px;
+        color: white;
+    }
+    .responsive {
+        /* float: none; */
+        background: none;
+        width: 0%;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        transition: ease-in-out;
+    }
+    .responsive ul {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .slide .slide-content {
+        display: block;
+    }
+    .responsive ul li {
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .responsive ul li:hover a {
+        padding: 0px 25px;
+        border: 0px;
+        background: #8FBC8F;
+        width: 100%;
+    }
+    .logo img {
+        display: block;
+        width: 150px;
+        margin-left: 20px;
+    }
+    .slide1,
+    .slide2,
+    .slide3 {
+        height: auto;
+    }
+    .slogan {
+        display: block;
+        text-align: center;
+    }
+    .text-about1 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .text-about2 {
+        font-size: 35px;
+        padding: 0px;
+    }
+    .border-box {
+        min-height: 80px;
+        min-width: 90px;
+    }
+    .pre-made {
+        font-size: 24px;
+        left: 64%
+    }
+    .demo-concept {
+        width: 36%;
+        font-size: 12px;
+        left: 64%;
+    }
+    .number-demo {
+        font-size: 80px;
+        top: 40px;
+    }
+    .text-about3 {
+        font-size: 12px;
+        top: 200px;
+    }
+    .demo {
+        margin-top: -60px;
+    }
+    .box-bord {
+        height: 80px;
+        width: 110px;
+    }
+    .num-page {
+        font-size: 90px;
+        line-height: 250px;
+    }
+    .text-page1 {
+        position: relative;
+        top: 16px;
+        margin-left: 189px;
+        font-size: 23px;
+    }
+    .text-page2 {
+        position: relative;
+        top: 23px;
+        margin-left: 191px;
+        font-size: 23px;
+    }
+    .professional-service {
+        height: 350px;
+    }
+    .circle {
+        width: 310px;
+        height: 310px;
+    }
+    .text-title {
+        font-size: 15px;
+        /* padding: 10px; */
+        line-height: 4px;
+    }
+    .text-title2 {
+        font-size: 15px;
+        line-height: 4px;
+    }
+    .text-content-service {
+        padding: 0px
+    }
+    .btn-awesome button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        color: #a7a7a7;
+    }
+    .text-review2 {
+        font-size: 40px;
+    }
+    .text-review3 {
+        font-size: 40px;
+    }
+    .text-bottom {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .banner-bottom {
+        height: auto;
+    }
 }
 
+@media screen and (max-width: 280px) {
+    .text-page1 {
+        position: relative;
+        top: 18px;
+        margin-left: 171px;
+        font-size: 19px;
+    }
+    .text-page2 {
+        position: relative;
+        top: 30px;
+        margin-left: 172px;
+        font-size: 21px;
+    }
+    .circle {
+        width: 215px;
+        height: 210px;
+    }
+    .professional-service {
+        height: 250px;
+    }
+    .text-content-service {
+        font-size: 13px;
+    }
+    .btn-awesome button {
+        width: 115px;
+        height: 40px;
+        font-size: 15px;
+        color: #a7a7a7;
+    }
+    .text-review2,
+    .text-review3 {
+        font-size: 35px;
+    }
 }

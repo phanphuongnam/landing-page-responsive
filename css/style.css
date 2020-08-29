@@ -21,7 +21,10 @@
     outline: none;
     cursor: pointer;
 }
-
+.slick-initialized .slick-slide {
+    display: grid !important;
+    justify-content: center !important;
+}
 .slide1 {
     position: relative;
     background: url("../images/Background-Image.jpg") no-repeat;
@@ -233,7 +236,7 @@
 
 .multipuple-pages {
     /* width: 200px; */
-    position: relative;
+   
     margin-top: 100px;
 }
 
@@ -242,6 +245,7 @@
     margin: auto;
     height: 118px;
     width: 160px;
+    position: relative;
     border: 5px solid rgba(200, 134, 112, 0.4);
 }
 
@@ -251,8 +255,9 @@
     font-style: normal;
     font-weight: 600;
     font-size: 143px;
-    line-height: 214px;
-    margin: -185px 0px 0px -60px;
+    position: absolute;
+    left: -37px;
+    top: -77px;
     text-align: center;
 }
 
@@ -261,8 +266,10 @@
     font-style: italic;
     font-weight: normal;
     font-size: 56px;
-    margin: -165px 0px 0px 730px;
+    position: absolute;
     color: #C88570;
+    left: 141px;
+    top: -25px;
 }
 
 .text-page2 {
@@ -270,9 +277,11 @@
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
+    position: absolute;
+    left: 143px;
+    top: 40px;
     /* line-height: 42px; */
     text-transform: uppercase;
-    margin: -30px 0px 0px 730px;
     color: #222222;
 }
 
@@ -373,7 +382,11 @@
     width: 180px;
     height: 180px;
 }
-
+.content-customer {
+    word-spacing: 2px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
 .address-customer {
     font-family: Roboto Mono;
     font-style: italic;
@@ -381,7 +394,7 @@
     font-size: 14px;
     line-height: 23px;
     text-align: center;
-    color: #999999;
+    color: #F9EBD9;
 }
 
 .banner-bottom {
@@ -529,10 +542,15 @@
         line-height: 77px;
         font-size: 30px;
     }
-    .text-page1,
-    .text-page2 {
-        font-size: 35px;
-        margin-left: 525px;
+    .text-page1{
+        top: -10px;
+        left: 148px;
+        font-size: 30px;
+    }
+    .text-page2{
+        top: 25px;
+        left: 148px;
+        font-size: 30px;
     }
 }
 
@@ -649,6 +667,18 @@
     .number-demo {
         font-size: 100px;
         top: 30px;
+        top: 20px;
+ 
+    }
+    .text-page1{
+        top: -10px;
+        left: 148px;
+        font-size: 30px;
+    }
+    .text-page2{
+        top: 30px;
+        left: 148px;
+        font-size: 30px;
     }
 }
 
@@ -757,20 +787,20 @@
         width: 110px;
     }
     .num-page {
+        left: -25px;
+        top: -50px;
         font-size: 90px;
-        line-height: 250px;
+        /* line-height: 250px; */
     }
     .text-page1 {
-        position: relative;
-        top: 10px;
-        margin-left: 238px;
-        font-size: 25px;
+        top: -10px;
+        left: 96px;
+        font-size: 30px;
     }
     .text-page2 {
-        position: relative;
-        top: 15px;
-        margin-left: 238px;
-        font-size: 25px;
+        top: 25px;
+        left: 96px;
+        font-size: 30px;
     }
     .professional-service {
         height: 350px;
@@ -917,19 +947,14 @@
         width: 110px;
     }
     .num-page {
+        top: -105px;
         font-size: 90px;
         line-height: 250px;
     }
     .text-page1 {
-        position: relative;
-        top: 10px;
-        margin-left: 238px;
         font-size: 25px;
     }
     .text-page2 {
-        position: relative;
-        top: 15px;
-        margin-left: 238px;
         font-size: 25px;
     }
     .professional-service {
@@ -1081,15 +1106,11 @@
         line-height: 250px;
     }
     .text-page1 {
-        position: relative;
-        top: 10px;
-        margin-left: 215px;
+        
         font-size: 25px;
     }
     .text-page2 {
-        position: relative;
-        top: 15px;
-        margin-left: 215px;
+        
         font-size: 25px;
     }
     .professional-service {
@@ -1241,15 +1262,13 @@
         line-height: 250px;
     }
     .text-page1 {
-        position: relative;
-        top: 10px;
-        margin-left: 215px;
+        top: -10px;
+        left: 100px;
         font-size: 25px;
     }
     .text-page2 {
-        position: relative;
-        top: 15px;
-        margin-left: 215px;
+        top: 20px;
+        left: 100px;
         font-size: 25px;
     }
     .professional-service {
@@ -1398,18 +1417,14 @@
     }
     .num-page {
         font-size: 90px;
-        line-height: 250px;
+
     }
     .text-page1 {
-        position: relative;
-        top: 16px;
-        margin-left: 189px;
+
         font-size: 23px;
     }
     .text-page2 {
-        position: relative;
-        top: 23px;
-        margin-left: 191px;
+
         font-size: 23px;
     }
     .professional-service {
@@ -1454,16 +1469,15 @@
 
 @media screen and (max-width: 280px) {
     .text-page1 {
-        position: relative;
-        top: 18px;
-        margin-left: 171px;
+        top: -10px;
+        left: 100px;
         font-size: 19px;
     }
     .text-page2 {
-        position: relative;
-        top: 30px;
-        margin-left: 172px;
-        font-size: 21px;
+        top: 20px;
+        left: 100px;
+        width: 60px;
+        font-size: 19px;
     }
     .circle {
         width: 215px;

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital@1&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -14,8 +13,27 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Landing Page Responsive</title>
 </head>
+<style type="text/css">
+    .wrapper{
+        display: none;
+        /* background: red; */
+    }
+
+    body h2 {
+        position: absolute;
+
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background:orange;
+    }
+</style>
 
 <body>
+   
+    <h2>waitting...</h2>
+    
     <div class="wrapper">
         <div class="header">
             <div class="container-fluid p-0 menu-primary">
@@ -219,25 +237,25 @@
                         <div class="container-fluid home justify-content-center">
 
                             <div class="demo container-fluid">
-                                <div class="text-center col-lg-2">
+                                <div class="text-center grid col-lg-2">
                                     <img class="img-fluid" src="./images/Home_2.png " alt=" ">
                                     <h6 class="text-white ">Home 1</h6>
                                 </div>
-                                <div class="text-center col-lg-2">
+                                <div class="text-center grid col-lg-2">
                                     <img class="img-fluid" src="./images/Home_2.png " alt=" ">
-                                    <h6 class="text-white ">Home 1</h6>
+                                    <h6 class="text-white ">Home 2</h6>
                                 </div>
-                                <div class="text-center col-lg-2">
+                                <div class="text-center grid col-lg-2">
                                     <img class="img-fluid" src="./images/Home_2.png " alt=" ">
-                                    <h6 class="text-white ">Home 1</h6>
+                                    <h6 class="text-white ">Home 3</h6>
                                 </div>
-                                <div class="text-center col-lg-2">
+                                <div class="text-center grid col-lg-2">
                                     <img class="img-fluid" src="./images/Home_2.png " alt=" ">
-                                    <h6 class="text-white ">Home 1</h6>
+                                    <h6 class="text-white ">Home 4</h6>
                                 </div>
-                                <div class="text-center col-lg-2">
+                                <div class="text-center grid col-lg-2">
                                     <img class="img-fluid" src="./images/Home_2.png " alt=" ">
-                                    <h6 class="text-white ">Home 1</h6>
+                                    <h6 class="text-white ">Home 5</h6>
                                 </div>
 
 
@@ -247,19 +265,19 @@
                     </div>
                 </div>
                 <div class="container-fluid p-0 page-about justify-content-center ">
-                    <div class="multipuple-pages col-lg-12 float-right ">
+                    <div class="multipuple-pages d-flex col-lg-12">
                         <div class="box-bord ">
-
+                            <div class="num-page ">
+                                <span>20</span>
+                            </div>
+                            <div class="text-page1 ">
+                                <p>Multipurple</p>
+                            </div>
+                            <div class="text-page2 ">
+                                <p>Pages</p>
+                            </div>
                         </div>
-                        <div class="num-page ">
-                            <span>20</span>
-                        </div>
-                        <div class="text-page1 ">
-                            <p>Multipurple</p>
-                        </div>
-                        <div class="text-page2 ">
-                            <p>Pages</p>
-                        </div>
+                        
                     </div>
                     <div class="blog-category m-0 container-fluid justify-content-center row ">
                         <div class="col-lg-3 col-md-7 ">
@@ -375,16 +393,23 @@
                 </div>
             </div>
         </div>
-
+        
+    
 </body>
+
 <script>
-    $(document).ready(function() {
+
+    window.onload =  function(){
+        $('body h2').css('display','none').fadeOut('slow')
+        $(".wrapper").css({
+            "display":"block",
+            
+        });
         function selectorAction(selector, action) {
             document.querySelector(selector).style.display = action;
         }
         $('.one-time').slick({
-            // dots: true,
-            // infinite: true,
+
             speed: 300,
             slidesToShow: 1,
             prevArrow: false,
@@ -395,12 +420,9 @@
         $('.demo').slick({
             // infinite: false,
             arrows: false,
-
-            // speed: 300,
             slidesToShow: 3,
-            slidesToScroll: 3,
-            // rtl: true,
-            // autoplaySpeed: 2000
+            slidesToScroll: 1,
+
         });
 
         $(window).resize(function() {
@@ -444,7 +466,16 @@
             selectorAction('.logo img', 'block');
             selectorAction('.responsive', 'none');
         })
-    })
+    
+        }
+
+   
+
+  
+    // $(document).ready(function() {
+        
+    // })
+    
 </script>
 
 </html>

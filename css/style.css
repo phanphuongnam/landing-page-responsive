@@ -463,8 +463,18 @@
         left: 50%;
     }
 }
-
-@media screen and (max-width: 953px) {
+/* @media screen and (max-width: 991px) {
+    .menu-primary .icon {
+        display: block;
+        z-index: 99;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 30px;
+    }
+} */
+@media screen and (max-width: 991px) {
     .menu-primary .icon {
         display: block;
         z-index: 99;
@@ -488,7 +498,6 @@
         /* float: none; */
         background: none;
         width: 0%;
-        display: none;
         justify-content: center;
         text-align: center;
         margin: 0px;

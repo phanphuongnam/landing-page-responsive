@@ -1,16 +1,31 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
-.header {
-    position: relative;
-}
+.header {}
 
 .menu-primary {
+    display: flex;
     position: absolute;
+    justify-content: space-between;
     z-index: 99;
+}
+
+.pos-menu {
+    justify-content: space-between;
+}
+
+.menu-primary::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.one-time:after {
+    content: '';
 }
 
 .slick-slide {
@@ -92,7 +107,7 @@
 
 .menu-home ul {
     margin-top: 26px;
-    margin-right: 290px;
+    /* margin-right: 290px; */
 }
 
 .menu-home ul li a {
@@ -116,7 +131,8 @@
 }
 
 .logo {
-    position: absolute;
+    /* position: absolute; */
+    margin-top: 24px;
 }
 
 .menu-home {}

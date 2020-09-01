@@ -683,6 +683,7 @@
     .demo-concept {
         left: 50%;
     }
+    
 }
 
 @media screen and (max-width: 991px) {
@@ -691,6 +692,9 @@
     }
     .demo-concept {
         left: 53%;
+    }
+    .pos-menu{
+        justify-content: center;
     }
     .menu-primary .icon {
         display: block;
@@ -704,31 +708,46 @@
     .close-menu {
         z-index: 99;
         position: absolute;
-        display: block;
+        display: none;
         top: 5px;
         left: 5px;
         font-size: 30px;
         color: white;
     }
     .responsive {
+        /* overflow: hidden; */
         display: none;
-        /* float: none; */
+        z-index: -99;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
         background: none;
-        width: 0%;
+        width: 100%;
+        opacity: 0.8;
         justify-content: center;
         text-align: center;
-        margin: 0px;
-        padding: 0px;
-        transition: ease-in-out;
     }
     .responsive ul {
-        float: none;
+        
         width: 100%;
         /* height: 400px; */
         margin-right: 0px;
         margin-top: 0px !important;
         padding: 0px;
         background: #222222;
+    }
+    .responsive ul li {
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
+        border: 0px;
+        background: #8FBC8F;
+        width: 100%;
     }
     .slide .slide-content {
         display: block;
@@ -741,18 +760,8 @@
         font-size: 24px;
         margin-top: -24px;
     }
-    .responsive ul li {
-        padding: 20px 0px;
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    .responsive ul li:hover a {
-        padding: 10px 40px;
-        border: 0px;
-        background: #8FBC8F;
-        width: 100%;
-    }
+   
+   
     .logo img {
         display: block;
         width: 150px;
@@ -801,6 +810,40 @@
         font-size: 110px;
         top: 35px;
     }
+    .responsive {
+        display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+        transition: ease-in-out;
+    }
+    .responsive ul {
+        
+        width: 100%;
+        /* height: 400px; */
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .responsive ul li {
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
+        border: 0px;
+        background: #8FBC8F;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -822,33 +865,13 @@
     .close-menu {
         z-index: 99;
         position: absolute;
-        display: block;
+        display: none;
         top: 5px;
         left: 5px;
         font-size: 30px;
         color: white;
     }
-    .responsive {
-        display: none;
-        /* float: none; */
-        background: none;
-        width: 0%;
-        display: none;
-        justify-content: center;
-        text-align: center;
-        margin: 0px;
-        padding: 0px;
-        transition: ease-in-out;
-    }
-    .responsive ul {
-        float: none;
-        width: 100%;
-        height: auto;
-        margin-right: 0px;
-        margin-top: 0px !important;
-        padding: 0px;
-        background: #222222;
-    }
+    
     .slide .slide-content {
         display: block;
     }
@@ -868,13 +891,35 @@
         line-height: 18px;
         text-align: center;
     }
+    .responsive {
+        display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+        transition: ease-in-out;
+    }
+    .responsive ul {
+        
+        width: 100%;
+        /* height: 400px; */
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
     .responsive ul li {
         padding: 20px 0px;
         display: block;
         width: 100%;
         text-align: center;
-    }
-    .responsive ul li:hover a {
+    } .responsive ul li:hover a {
         padding: 10px 40px;
         border: 0px;
         background: #8FBC8F;
@@ -946,6 +991,40 @@
         width: 500px;
         height: 500px;
     }
+    .responsive {
+        display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+        transition: ease-in-out;
+    }
+    .responsive ul {
+        
+        width: 100%;
+        /* height: 400px; */
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .responsive ul li {
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
+        border: 0px;
+        background: #8FBC8F;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -969,6 +1048,40 @@
         margin-left: 120px;
         margin-right: 100px;
     }
+    .responsive {
+        display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+        transition: ease-in-out;
+    }
+    .responsive ul {
+        
+        width: 100%;
+        /* height: 400px; */
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .responsive ul li {
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
+        border: 0px;
+        background: #8FBC8F;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -990,37 +1103,40 @@
         font-size: 30px;
         color: white;
     }
+    
+    .slide .slide-content {
+        display: block;
+    }
     .responsive {
-        /* float: none; */
-        background: none;
-        width: 0%;
         display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
         justify-content: center;
         text-align: center;
-        margin: 0px;
-        padding: 0px;
+
         transition: ease-in-out;
     }
     .responsive ul {
-        float: none;
+        
         width: 100%;
-        height: auto;
+        /* height: 400px; */
         margin-right: 0px;
         margin-top: 0px !important;
         padding: 0px;
         background: #222222;
-    }
-    .slide .slide-content {
-        display: block;
     }
     .responsive ul li {
         padding: 20px 0px;
         display: block;
         width: 100%;
         text-align: center;
-    }
-    .responsive ul li:hover a {
-        padding: 0px 25px;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
         border: 0px;
         background: #8FBC8F;
         width: 100%;
@@ -1170,37 +1286,40 @@
         font-size: 30px;
         color: white;
     }
+    
+    .slide .slide-content {
+        display: block;
+    }
     .responsive {
-        /* float: none; */
-        background: none;
-        width: 0%;
         display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
         justify-content: center;
         text-align: center;
-        margin: 0px;
-        padding: 0px;
+
         transition: ease-in-out;
     }
     .responsive ul {
-        float: none;
+        
         width: 100%;
-        height: auto;
+        /* height: 400px; */
         margin-right: 0px;
         margin-top: 0px !important;
         padding: 0px;
         background: #222222;
-    }
-    .slide .slide-content {
-        display: block;
     }
     .responsive ul li {
         padding: 20px 0px;
         display: block;
         width: 100%;
         text-align: center;
-    }
-    .responsive ul li:hover a {
-        padding: 0px 25px;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
         border: 0px;
         background: #8FBC8F;
         width: 100%;
@@ -1331,37 +1450,40 @@
         font-size: 30px;
         color: white;
     }
+    
+    .slide .slide-content {
+        display: block;
+    }
     .responsive {
-        /* float: none; */
-        background: none;
-        width: 0%;
         display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
         justify-content: center;
         text-align: center;
-        margin: 0px;
-        padding: 0px;
+
         transition: ease-in-out;
     }
     .responsive ul {
-        float: none;
+        
         width: 100%;
-        height: auto;
+        /* height: 400px; */
         margin-right: 0px;
         margin-top: 0px !important;
         padding: 0px;
         background: #222222;
-    }
-    .slide .slide-content {
-        display: block;
     }
     .responsive ul li {
         padding: 20px 0px;
         display: block;
         width: 100%;
         text-align: center;
-    }
-    .responsive ul li:hover a {
-        padding: 0px 25px;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
         border: 0px;
         background: #8FBC8F;
         width: 100%;
@@ -1491,37 +1613,40 @@
         font-size: 30px;
         color: white;
     }
+    
+    .slide .slide-content {
+        display: block;
+    }
     .responsive {
-        /* float: none; */
-        background: none;
-        width: 0%;
         display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
         justify-content: center;
         text-align: center;
-        margin: 0px;
-        padding: 0px;
+
         transition: ease-in-out;
     }
     .responsive ul {
-        float: none;
+        
         width: 100%;
-        height: auto;
+        /* height: 400px; */
         margin-right: 0px;
         margin-top: 0px !important;
         padding: 0px;
         background: #222222;
-    }
-    .slide .slide-content {
-        display: block;
     }
     .responsive ul li {
         padding: 20px 0px;
         display: block;
         width: 100%;
         text-align: center;
-    }
-    .responsive ul li:hover a {
-        padding: 0px 25px;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
         border: 0px;
         background: #8FBC8F;
         width: 100%;
@@ -1649,43 +1774,46 @@
     .close-menu {
         z-index: 99;
         position: absolute;
-        display: block;
+        display: none;
         top: 5px;
         left: 5px;
         font-size: 30px;
         color: white;
     }
+    
+    .slide .slide-content {
+        display: block;
+    }
     .responsive {
-        /* float: none; */
-        background: none;
-        width: 0%;
         display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
         justify-content: center;
         text-align: center;
-        margin: 0px;
-        padding: 0px;
+
         transition: ease-in-out;
     }
     .responsive ul {
-        float: none;
+        
         width: 100%;
-        height: auto;
+        /* height: 400px; */
         margin-right: 0px;
         margin-top: 0px !important;
         padding: 0px;
         background: #222222;
-    }
-    .slide .slide-content {
-        display: block;
     }
     .responsive ul li {
         padding: 20px 0px;
         display: block;
         width: 100%;
         text-align: center;
-    }
-    .responsive ul li:hover a {
-        padding: 0px 25px;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
         border: 0px;
         background: #8FBC8F;
         width: 100%;
@@ -1804,6 +1932,9 @@
         left: 68%;
         font-size: 12px;
     }
+    .close-menu{
+        display: none;
+    }
     .demo-concept {
         left: 64%;
         font-size: 10px;
@@ -1849,5 +1980,39 @@
     }
     .test {
         height: auto;
+    }
+    .responsive {
+        display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+        background: none;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+        transition: ease-in-out;
+    }
+    .responsive ul {
+        
+        width: 100%;
+        /* height: 400px; */
+        margin-right: 0px;
+        margin-top: 0px !important;
+        padding: 0px;
+        background: #222222;
+    }
+    .responsive ul li {
+        padding: 20px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    } .responsive ul li:hover a {
+        padding: 10px 40px;
+        border: 0px;
+        background: #8FBC8F;
+        width: 100%;
     }
 }

@@ -51,7 +51,7 @@
                             </li>
 
                         </ul>
-                       
+
 
                     </div>
                 </div>
@@ -320,13 +320,13 @@
 
                     </div>
                     <div class="blog-category m-0 container-fluid justify-content-center row ">
-                        <div class="col-lg-3 col-md-7 ">
+                        <div class="d-flex col-lg-3 col-md-7 align-items-center">
                             <img class="img-fluid " src="./images/Group 19.png " alt=" ">
                         </div>
-                        <div class="col-lg-4 col-md-8 ">
+                        <div class="d-flex col-lg-4 col-md-8 ">
                             <img class="img-fluid img-blog" src="./images/Group 19.png " alt=" ">
                         </div>
-                        <div class="col-lg-3 col-md-7 ">
+                        <div class="d-flex col-lg-3 align-items-center col-md-7 ">
                             <img class="img-fluid " src="./images/Group 19.png " alt=" ">
                         </div>
                     </div>
@@ -367,7 +367,7 @@
                     <div class="justify-content-center row box-review">
                         <div class="col-lg-3 col-md-4 col-md-2 personal mx-4 my-4 ">
                             <img class="img-customer mx-auto d-block rounded-circle " src="./images/Layer-9.png " alt=" ">
-                            <p class="content-customer pt-3 pb-3 px-2 ">
+                            <p class="content-customer pt-3 pb-2 px-2 ">
                                 Printcart WordPress theme offers plenty of shortcodes to satisfy your thirst for customisations providing you with endless designs that shine.
                             </p>
                             <p class="col-sm-5 m-auto border "></p>
@@ -380,7 +380,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-md-2 personal mx-4 my-4">
                             <img class="img-customer mx-auto d-block rounded-circle " src="./images/Mask Group.png " alt=" ">
-                            <p class="content-customer pt-3 pb-3 px-2 ">
+                            <p class="content-customer pt-3 pb-2 px-2 ">
                                 Printcart WordPress theme offers plenty of shortcodes to satisfy your thirst for customisations providing you with endless designs that shine.
                             </p>
                             <p class="col-sm-5 m-auto border "></p>
@@ -393,7 +393,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-md-2 personal mx-4 my-4 ">
                             <img class="img-customer mx-auto d-block rounded-circle " src="./images/Layer-10.png " alt=" ">
-                            <p class="content-customer pt-3 pb-3 px-2 ">
+                            <p class="content-customer pt-3 pb-2 px-2 ">
                                 Printcart WordPress theme offers plenty of shortcodes to satisfy your thirst for customisations providing you with endless designs that shine.
                             </p>
                             <p class="col-sm-5 m-auto border "></p>
@@ -466,11 +466,11 @@
 
             if (w > 991) {
                 var resp = document.querySelector('.responsive');
-                resp.setAttribute("style", `color:white` );
+                resp.setAttribute("style", `color:white`);
                 selectorAction('.responsive', 'block');
                 selectorAction('.logo img', 'block');
                 selectorAction('.close-menu', 'none');
-            } else{
+            } else {
                 selectorAction('.logo img', 'block');
                 selectorAction('.responsive', 'none');
                 selectorAction('.close-menu', 'none');
@@ -481,9 +481,9 @@
             selectorAction('.logo img', 'none');
             selectorAction('.slide-content', 'none');
             selectorAction('.close-menu', 'block');
-            resp.setAttribute("style", `display:block;transition: 1.5s ease;left:${0};` );
-             
-            
+            resp.setAttribute("style", `display:block;transition: 1.5s ease;left:${0};`);
+
+
         })
         $('.close-menu').click(function() {
             var resp = document.querySelector('.responsive');
@@ -492,7 +492,7 @@
             selectorAction('.close-menu', 'none');
             selectorAction('.logo img', 'block');
             selectorAction('.responsive', 'none');
-           
+
         })
     })
 </script>
